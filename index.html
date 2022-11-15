@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a ThermoLatam</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+
+    <div class="hero">
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <a href="index.html"><img src="./images/logo.png" alt="logo"></a>
+            </div>
+           
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closeMenu()"></i>
+                    <ul>
+                        <a href="./pages/articulos.html"><li>Articulos</li></a>
+                        <a href="./pages/noticias.html"><li>Noticias</li></a>
+                        <a href="./pages/galeria.html"><li>Galeria</li></a>
+                        <a href="./pages/contactanos.html"><li>Contactanos</li></a>
+                    </ul>
+            </div>
+        </div>
+
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        <div class="banner-title">
+
+            <h1>Que es la <span>Termografia?</span></h1>
+                <p>La termografía es una técnica que permite determinar temperaturas a distancia y sin necesidad de contacto físico con el objeto a estudiar. La termografía permite captar la radiación infrarroja del espectro electromagnético, utilizando cámaras térmicas o de termovisión. Conociendo los datos de las condiciones del entorno —humedad y temperatura del aire, distancia a objeto termografiado, temperatura reflejada, radiación incidente— y de las características de las superficies termografiadas como la emisividad se puede convertir la energía radiada detectada por la cámara termográfica en valores de temperaturas. En una termografía, cada pixel corresponde con un valor de medición de la radiación; con un valor de temperatura. A esa imagen se le puede definir como radiométrica.</p>
+       
+        </div>
+    </div>    
+
+    <footer>
+        <div class="footer-content">
+            <h3>ThermoLatam, Termigrafia en LatinoAmerica</h3>
+                <p>Todo lo que quieras aprender y mas!</p>
+                    <ul class="socials">
+                        <li><a href="http://www.facebook.com/FLIR"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="http://www.instagram.com/flir"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="http://www.twitter.com/flir"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.youtube.com/flir"><i class="fa fa-youtube"></i></a></li>
+                </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2022 ThermoLatam. Diseñado por <span>Alexis Bonilla</span></p>
+        </div>
+    </footer>
+    <script>
+        var show = document.getElementById("nav-links");
+            function showMenu(){
+                show.style.right = "0";
+            }
+
+            function closeMenu(){
+                show.style.right = "-200px";
+            }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
